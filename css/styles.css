@@ -167,6 +167,8 @@ display: none;
         display: flex;
         flex-direction: column;
         gap: 12px;
+        font-style: normal;
+        color: #434455;
 }
 
     .contacts{
@@ -183,7 +185,7 @@ display: none;
         color: #404bbf;
 } 
 
-    .open-menu-button{
+    .open-menu-btn{
         display: none;
 }
 }
@@ -202,33 +204,48 @@ display: none;
         font-size: 16px;
         line-height: 1.5;
     }
-}
 
+    .address-list{
+        flex-direction: row;
+        color: #434455;
+        gap: 40px;
+    }
+}
 
 
 /* Effective Solutions */
 .main-box{
 background-color: #2e2f42;
-padding: 188px 0;
+padding: 72px 0;
 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-image.jpg);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
-margin: 0 auto;
-max-width: 1440px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 96px;
+max-width: 320px;
+height: 432px;
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-title{
 font-weight: 700;
-font-size: 56px;
-line-height: 1.07;
+font-size: 36px;
+line-height: 1.11;
 letter-spacing: 0.02em;
 text-align: center;
 color: #fff;
 max-width: 496px;
-margin-left: auto;
-margin-right: auto;
-margin-bottom: 48px;
+margin-left: 52px;
+margin-right: 52px;
+margin-bottom: 72px;
 }
 
 .main-button{
@@ -253,6 +270,108 @@ margin-bottom: 48px;
 .main-button:focus{
     background-color: #404bbf;
 }
+
+@media screen and (min-width:320px) {
+    .main-box{
+            background-color: #2E2F42;
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-mob-1x.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            max-width: 320px;
+            height: 432px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 96px;
+            padding: 72px 0 72px;
+    }
+
+    .main-title{
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-align: center;
+        margin-left: 52px;
+        margin-right: 52px;
+        margin-bottom: 72px;
+        color: #ffffff;
+        max-width: 496px;
+    }
+
+    .main-button{
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #fff;
+        border-radius: 4px;
+        padding: 16px 0;
+        width: 169px;
+        height: 56px;
+        margin-left: auto;
+        margin-right: auto;
+        background: #4d5ae5;
+        display: block;
+        min-width: 169px;
+        border: none;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+    .main-box{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url(../images/hero-bg-mob-2x.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main-box{
+        max-width: 768px;
+        padding-bottom: 112px;
+        padding-top: 112px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tab-1x.jpg);
+    }
+
+    .main-title{
+        font-size: 56px;
+        line-height: 1.07;
+        margin-bottom: 36px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width:768px) and (min-resolution: 192dpi) {
+    .main-box{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+    url(../images/hero-bg-tab-2x.jpg)
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .main-box{
+        max-width: 1440px;
+        padding-bottom: 188px;
+    }
+
+    .main-title{
+        margin-bottom: 48px;
+    }
+}
+
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+    .main-box{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+    url(../images/people-office-2х.jpg);
+    }
+}
+
 /* Features */
 .features-box{
 padding: 120px 0;
