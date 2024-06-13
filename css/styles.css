@@ -454,8 +454,8 @@ text-decoration: none;
 
 @media screen and (min-width: 1158px) {
     .features-box{
-            padding-top: 120px;
-            padding-bottom: 120px;
+            margin-top: 120px;
+            margin-bottom: 120px;
     }
 
     .features-list{
@@ -491,7 +491,8 @@ padding: 32px 0;
 
  .team-box{
 background: #f4f4fd;
-padding: 120px 0;
+padding-bottom: 96px;
+padding-top: 96px;
  }
 
  .team-title{
@@ -505,11 +506,25 @@ text-transform: capitalize;
 margin-bottom: 72px;
  }
 
+ .team-list{
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    align-items: center;
+ }
+
  .team-item{
 background: #fff;
 border-radius: 0 0 4px 4px;
-width: calc((100% - 72px) / 4);
+display: flex;
+flex-direction: column;
+align-items: center;
 box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+ }
+
+ .team-images{
+    display: block;
+    max-width: 100%;
  }
 
  .team-name{
@@ -521,11 +536,6 @@ text-align: center;
 color: #2e2f42;
 text-decoration: none;
 margin-bottom: 8px;
- }
-
- .team-list{
-    display: flex;
-    gap: 24px;
  }
 
  .team-profession{
@@ -565,7 +575,48 @@ margin-bottom: 8px;
  }
 
  .team-item-icon :hover, .team-item-icon :focus{
-    background-color: #404bbf;
+        background-color: #404bbf;
+ }
+
+ @media screen and (min-width: 768px) {
+    .container{
+        padding-left: 108px;
+        padding-right: 108px;
+    }
+
+    .team-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 64px 24px;
+        justify-content: center;
+    }
+
+    .team-item{
+        width: calc((100% - 24px) / 2);
+    }
+ }
+
+ @media screen and (min-width: 1158px) {
+    .team-box{
+        padding-bottom: 120px;
+        padding-top: 120px;
+    }
+
+    .container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .team-list{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .team-item{
+        width: calc((100% - 72px) / 4);
+    }
  }
 
 
