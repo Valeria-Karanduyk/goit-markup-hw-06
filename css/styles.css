@@ -221,9 +221,9 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
-margin-left: auto;
-margin-right: auto;
-/* margin-bottom: 96px; */
+/* margin-left: auto;
+margin-right: auto; */
+margin-bottom: 96px;
 max-width: 320px;
 /* height: 432px; */
 }
@@ -259,7 +259,7 @@ margin-bottom: 72px;
     cursor: pointer;
     display: block;
     min-width: 169px;
-    height: 56px;
+    /* height: 56px; */
     border: none;
     border-radius: 4px;
     margin: 0 auto;
@@ -279,9 +279,9 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             background-size: cover;
             background-position: center;
             max-width: 320px;
-            height: 432px;
+            /* height: 432px;
             margin-left: auto;
-            margin-right: auto;
+            margin-right: auto; */
             margin-bottom: 96px;
             padding: 72px 0 72px;
     }
@@ -310,9 +310,9 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         border-radius: 4px;
         padding: 16px 0;
         width: 169px;
-        height: 56px;
-        margin-left: auto;
-        margin-right: auto;
+        /* height: 56px; */
+        /* margin-left: auto;
+        margin-right: auto; */
         background: #4d5ae5;
         display: block;
         min-width: 169px;
@@ -529,6 +529,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
  .team-images{
     display: block;
     max-width: 100%;
+    height: auto;
  }
 
  .team-name{
